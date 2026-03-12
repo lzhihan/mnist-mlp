@@ -53,7 +53,6 @@ mnist_mlp/
 ├── requirements.txt            # Python 依赖包列表
 ├── train_mlp.py                # 训练脚本（含模型定义）
 ├── predict_gui.py              # GUI 预测工具（版本 1：基础版）
-├── predict_gui_2.py            # GUI 预测工具（版本 2：增强预览版）
 ├── .gitignore                  # Git 忽略文件配置
 ├── README.md                   # 项目说明文档
 ├── AGENTS.md                   # AI 开发指南
@@ -233,11 +232,6 @@ python train_mlp.py
 
 ```bash
 python predict_gui.py
-```
-
-或使用增强预览版本：
-```bash
-python predict_gui_2.py
 ```
 
 ---
