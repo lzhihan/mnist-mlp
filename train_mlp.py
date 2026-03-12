@@ -29,7 +29,7 @@ test_accuracies = []
 class MLP(nn.Module):
     """多层感知机模型"""
 
-    def __init__(self, input_size, hidden_size, num_classes):
+    def __init__(self, input_size=28 * 28, hidden_size=256, num_classes=10):
         super(MLP, self).__init__()
         # 第一层：输入 (784) -> 隐藏层
         self.fc1 = nn.Linear(input_size, hidden_size)
