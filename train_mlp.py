@@ -135,6 +135,8 @@ def train(epoch, model, train_loader, criterion, optimizer):
 
         # 1. 前向传播
         optimizer.zero_grad()  # 清空梯度
+
+        # 调用模型实例的 __call__ 方法，该方法内部会自动执行 forward(data)
         output = model(data)
 
         # 2. 计算损失
