@@ -37,7 +37,8 @@ class MLP(nn.Module):
         # 第二层：隐藏层 -> 输出 (10)
         self.fc2 = nn.Linear(hidden_size, num_classes)
 
-        # 可选：添加 Dropout 防止过拟合 (这里暂时不加，因为 MLP 在 MNIST 上不容易过拟合)
+        # 可选：添加 Dropout 防止过拟合，原理：在训练过程中，随机丢弃一部分神经元的输出，使模型不依赖于特定的神经元，从而提高泛化能力。
+        # (这里暂时不加，因为 MLP 在 MNIST 上不容易过拟合)
         # self.dropout = nn.Dropout(p=0.2)
 
     def forward(self, x):
